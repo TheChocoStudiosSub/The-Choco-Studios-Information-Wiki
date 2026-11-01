@@ -1,0 +1,43 @@
+name: Usulkan Fitur
+description: Ajukan ide atau peningkatan untuk produk dan layanan TCS.
+title: "[Usulan Fitur]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Jelaskan kebutuhan yang ingin diselesaikan. Usulan akan ditinjau, tetapi pengajuan tidak berarti fitur pasti dibuat atau memiliki jadwal rilis.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Produk atau layanan
+      options:
+        - Choco AI
+        - Choco AI Help Center / Sara
+        - TCS UMKM Stock & Sales Tracker
+        - Situs Informasi TCS
+        - Dokumentasi Wiki
+        - Lainnya
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: Masalah atau kebutuhan
+      description: Apa kesulitan yang ingin diselesaikan?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Usulan solusi
+      description: Jelaskan fitur atau perubahan yang Anda harapkan.
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Manfaat
+      description: Siapa yang terbantu dan bagaimana?
+    validations:
+      required: false
