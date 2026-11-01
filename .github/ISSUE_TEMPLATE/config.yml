@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Dukungan dan pertanyaan umum TCS
+    url: mailto:thechocostudio@gmail.com
+    about: Gunakan email untuk pertanyaan umum atau bantuan yang membutuhkan informasi pribadi.
+  - name: Laporan keamanan atau kerentanan
+    url: mailto:thechocostudio@gmail.com
+    about: Jangan membuat laporan kerentanan yang belum diperbaiki sebagai issue publik. Hubungi TCS secara privat.
