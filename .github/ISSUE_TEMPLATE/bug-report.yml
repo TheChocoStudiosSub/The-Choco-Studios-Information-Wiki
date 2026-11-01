@@ -1,0 +1,72 @@
+name: Laporkan Bug
+description: Laporkan masalah pada situs, dokumentasi, atau produk TCS.
+title: "[Bug]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih telah membantu meningkatkan produk TCS. Jangan sertakan kata sandi, OTP, API key, token, data pelanggan, atau informasi rahasia.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Produk atau layanan
+      description: Pilih produk yang mengalami masalah.
+      options:
+        - Situs Informasi TCS
+        - Choco AI
+        - Choco AI Help Center / Sara
+        - TCS UMKM Stock & Sales Tracker
+        - Dokumentasi Wiki
+        - Lainnya
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versi produk
+      description: Isi jika diketahui. Jika tidak tahu, biarkan kosong.
+      placeholder: Contoh 1.0.0
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: Apa yang terjadi?
+      description: Jelaskan masalah yang ditemukan.
+      placeholder: Tuliskan gejala atau pesan kesalahan yang muncul.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Langkah untuk mengulangi masalah
+      description: Tuliskan langkah-langkahnya secara berurutan.
+      placeholder: |
+        1. Buka ...
+        2. Pilih ...
+        3. Masalah muncul ...
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: Hasil yang diharapkan
+      placeholder: Jelaskan hasil yang seharusnya terjadi.
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Perangkat dan lingkungan
+      description: Contoh sistem operasi, browser, atau perangkat yang digunakan.
+      placeholder: Windows 11, Chrome, dan sebagainya.
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Bukti tambahan
+      description: Tautan atau tangkapan layar yang sudah disamarkan dari data pribadi.
+    validations:
+      required: false
