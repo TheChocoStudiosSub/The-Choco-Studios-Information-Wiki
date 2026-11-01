@@ -1,0 +1,43 @@
+name: Koreksi Dokumentasi
+description: Laporkan informasi Wiki yang salah, tidak jelas, atau sudah kedaluwarsa.
+title: "[Dokumentasi]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gunakan formulir ini jika menemukan tautan rusak, informasi yang tidak akurat, atau halaman yang perlu diperjelas.
+  - type: input
+    id: page
+    attributes:
+      label: Halaman yang dilaporkan
+      placeholder: Tempel URL halaman Wiki.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Jenis koreksi
+      options:
+        - Informasi tidak akurat
+        - Informasi kedaluwarsa
+        - Tautan rusak
+        - Penjelasan kurang jelas
+        - Halaman atau topik belum tersedia
+        - Kesalahan penulisan
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Rincian koreksi
+      description: Jelaskan bagian yang perlu diperbaiki.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Sumber pendukung
+      description: Sertakan tautan sumber yang dapat diverifikasi jika tersedia.
+    validations:
+      required: false
